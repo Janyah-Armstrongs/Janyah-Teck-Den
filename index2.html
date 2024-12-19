@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janyah's Teck Den</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure html and body take full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Use the new background image and set text to black */
+        body {
+            background: url('Background3.jpg'), /* Local image */
+                        #FFFFFF; /* White color as fallback */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Make sure the image covers the whole screen */
+            background-position: center; /* Center the background */
+            font-family: 'Libre Baskerville', serif;
+            color: #3E2723; /* Text color set to mocha */
+            margin: 0;
+            padding: 0;
+            text-shadow: 2px 2px 4px white; /* Apply white shadow to all text */
+        }
+
+        /* Header Section - Same background as the body */
+        header {
+            background: inherit; /* Inherit the body background style */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Optional: Adjust header text style */
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Navigation links style */
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* Styling for all sections */
+        section {
+            padding: 20px;
+            background: transparent; /* Set background to transparent to avoid overlay conflict */
+            text-align: center; /* Center all text content inside the section */
+            margin: 0 auto; /* Centers the section itself */
+            max-width: 80%; /* Optional: limits the width of the content */
+        }
+
+        h2 {
+            font-size: 2em; /* Adjust the size if necessary */
+            margin-bottom: 10px; /* Space between the heading and content */
+        }
+
+        p, ul {
+            text-align: center; /* Center the paragraph and list items */
+            margin: 0 auto;
+            max-width: 800px; /* Optional: to control width of the text */
+        }
+
+        ul {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin: 5px 0; /* Space between each list item */
+        }
+
+        /* Portfolio Section Images */
+        #portfolio div {
+            display: flex;
+            justify-content: center; /* Centers the images horizontally */
+            gap: 20px; /* Adds space between images */
+            flex-wrap: wrap; /* Allows images to wrap onto the next line if there isn't enough space */
+        }
+
+        #portfolio img {
+            width: 200px; /* Adjust as needed */
+            margin: 10px;
+            border: 2px solid #fff; /* Optional: adds a border to make images stand out */
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+
+	/* Change the font of the message textarea */
+	textarea {
+	    font-family: 'Libre Baskerville', serif; ?* Set font */
+	    font-size: 16px; /* Optional: Set font size */
+	    line-height: 1.5; /* Optional: Adjust line height for better readability */
+	    padding: 10px; /* Optional : Add padding for better s[acing inside the texture */
+	}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Janyah's Teck Den</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">TechTalk</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I’m an 18-year-old aspiring DevOps engineer with a passion for learning, problem-solving, and embracing new challenges. While working at the local catering business, I'm also advancing my technical skills through the Level Up in Tech apprenticeship program, which provides me with hands-on experience in the industry.
+	    </p>
+
+	    <p> 
+		I am dedicated to growing my knowledge and education in diverse ways while exploring exciting opportunities within the tech world. My interest originally lay in architecture and virtual reality, but I realized that a career in tech would allow me to experience and combine the best of both fields.
+	    </p>
+
+	    <p>
+		In my free time, I enjoy drawing, playing sports, and building-whether that's creating online projects or working on hands-on creations. I'm ear to connect with like-minded individuals, learn from experienced professionals, and gain insights into the tech community.
+	    </p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>TeckTalk Topics</h2>
+            <ul>
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>Cloud Solutions</li>
+                <li>Consulting</li>
+            </ul>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>My Portfolio</h2>
+            <p>Check out some of my recent work below:</p>
+            <div>
+                <!-- Example Portfolio Links -->
+                <a href="https://medium.com/@janyaharmstrong091406/jenkins-deployment-1b387b667370" target="_blank" title="Jenkins Deployment on Medium">
+                    <img src="Jenkins.jpg" alt="Jenkins Deployment on Medium">
+                </a>
+                <a href="https://medium.com/@janyaharmstrong091406/access-do-you-have-it-9f33e4342587" target="_blank" title="Access - Do You Have It?">
+                    <img src="acess do you have it.jpg" alt="Access - Do You Have It?">
+                </a>
+                <a href="https://medium.com/@janyaharmstrong091406/docker-swarm-286d65d64720" target="_blank" title="Docker Swarm">
+                    <img src="docker.jpg" alt="Docker Swarm">
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Teck To Me</h2>
+            <!-- Formspree Integration -->
+            <form action="https://formspree.io/f/xyzyqjga" method="POST" style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+                <!-- Your existing form fields here -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <!-- Hidden field for redirect after submission -->
+                <input type="hidden" name="_next" value="thank-you.html">
+                <input type="hidden" name="_subject" value="New Contact Form Submission">
+
+                <!-- Submit button -->
+                <button type="submit" style="padding: 10px; background-color: #007bff; color: white; border: none; cursor: pointer;">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Armstrong.co. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
